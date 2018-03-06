@@ -162,7 +162,7 @@ Computers are only capable of seeing `0` and `1`. Those are called
 binary numbers. For example, computers see `2` as `10`, and `3` as `11`.
 How about `7`?
 
-We can use {{% button href="lesson7.files/worksheet.pdf" icon="fa fa-download" %}}this worksheet{{% /button %}}
+We can use {{% button href="https://github.com/digicosmos86/MicroInventor_Hugo/raw/master/content/unit1/lesson7.files/lesson7worksheet.pdf" icon="fa fa-download" %}}this worksheet{{% /button %}}
 
 Use 7 coins, fill the columns with coins. However, remember, when you
 are finished, the columns have to be either empty or full. After you are

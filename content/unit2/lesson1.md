@@ -52,7 +52,7 @@ In this lesson the students will learn to decompose a problem by breaking down a
 
 #### Materials Needed:
 
-> Raspberry Pi 3 + SenseHAT; worksheet
+> Raspberry Pi 3 + SenseHAT; {{% button href="https://github.com/digicosmos86/MicroInventor_Hugo/raw/master/content/unit2/lesson1.files/worksheet.pdf" icon="fa fa-download" %}}Worksheet{{% /button %}}
 
 #### Target Skills:
 
@@ -140,7 +140,7 @@ So here is actually what happened: we defined two colors: `red` and `white`. How
 Pay attention to the plural in `sense.set_pixels()`. In the next few lessons, we will encounter the `sense.set_pixel()` function, which looks very similar.
 {{% /notice %}}
 
-We can design our own patterns.  You can work on {{% button href="lesson1.files/worksheet.pdf" icon="fa fa-download" %}}this worksheet{{% /button %}}. Draw your own patterns on the grid, define your own color variables, and then modify the `question_mark` variable (you can call it whatever you like). Just remember to pass it to `sense.set_pixels()` function.
+We can design our own patterns.  You can work on {{% button href="https://github.com/digicosmos86/MicroInventor_Hugo/raw/master/content/unit2/lesson1.files/worksheet.pdf" icon="fa fa-download" %}}this worksheet{{% /button %}}. Draw your own patterns on the grid, define your own color variables, and then modify the `question_mark` variable (you can call it whatever you like). Just remember to pass it to `sense.set_pixels()` function.
 
 Feel free to design 2-3 frames and show them on your SenseHAT.
 

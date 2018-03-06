@@ -52,7 +52,7 @@ In this lesson we build complexity through for-loops.  The students will learn h
 
 #### Materials Needed:
 
-> Raspberry Pi 3 with SenseHAT; [Worksheet](#) with [draw_line_silly.py]({{< ref "#draw_line_silly" >}}) below.
+> Raspberry Pi 3 with SenseHAT; {{% button href="https://github.com/digicosmos86/MicroInventor_Hugo/raw/master/content/unit2/lesson2.files/worksheet.pdf" icon="fa fa-download" %}}Worksheet{{% /button %}} with [draw_line_silly.py]({{< ref "#draw_line_silly" >}}) below.
 
 #### Target Skills:
 
@@ -138,7 +138,7 @@ Explain to the students that all the cool things like drawing an animated rainbo
 
 ![RPi Pixel](https://s3.eu-west-2.amazonaws.com/learning-resources-production/projects/rpi-sensehat-led-coordinates/74c1964b50cd187a24d1ba6365c46006161f539b/en/images/coordinates.png)
 
-**Task**: Use this worksheet to design a picture that you would like to display on the LED matrix.  Then use `sense.set_pixel()` method to "draw" the picture on the LED matrix.
+**Task**: Use this {{% button href="https://github.com/digicosmos86/MicroInventor_Hugo/raw/master/content/unit2/lesson2.files/worksheet.pdf" icon="fa fa-download" %}}worksheet{{% /button %}} to design a picture that you would like to display on the LED matrix.  Then use `sense.set_pixel()` method to "draw" the picture on the LED matrix.
 
 ```python
 sense.set_pixels(pixel_list)
@@ -247,7 +247,7 @@ for i in [0, 1, 2, 3, 4, 5, 6, 7]:
     time.sleep(1)
 ```
 
-Ask the students to use their worksheet to figure out why the code does what it does.
+Ask the students to use their {{% button href="https://github.com/digicosmos86/MicroInventor_Hugo/raw/master/content/unit2/lesson2.files/worksheet.pdf" icon="fa fa-download" %}}worksheet{{% /button %}} to figure out why the code does what it does.
 
 There is *one more thing* that the code does not do yet.  You have to manually write the list.  What if we have an 100x100 matrix?  In Python, you can write `range(start, end, step)` instead:
 
