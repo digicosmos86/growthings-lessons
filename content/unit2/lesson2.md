@@ -9,15 +9,15 @@ pre = "<b>Lesson 2. </b>"
 
 ## Lesson Information
 
-In this lesson we build complexity through custom functions and loops.  The students will learn how to discover patterns in code and use loops to simplify their code.  They will also learn how to build up complexity by combining loops and custom functions. The ultimate goal is to understand how we can construct layers of abstraction to solve problems.
+In this lesson we build complexity through for-loops.  The students will learn how to discover patterns in code and use loops to simplify their code, both very important concepts in computational thinking.  They will also learn how to build up complexity by combining loops. The ultimate goal is to understand how we can construct layers of abstraction to solve problems.
 
 {{% sidebar "Highlights" %}}
 
 ##### Computational Thinking Skills
 
-* **Abstraction**: Building abstraction with functions and parameterization
 * **Abstraction**: Discovering Patterns
 * **Automation**: Automating routines with loops
+* **Analysis**: Using the debug tool to peek inside the loop and understand for-loops
 
 ##### Standard Alignments
 
@@ -43,7 +43,8 @@ In this lesson we build complexity through custom functions and loops.  The stud
 
 * Why do we need for-loops when we have while-loops?
 * Why do we need `list`s?
-* Why do we need variables?
+* How does list iteration work?
+* What are individual frames composed of?
 
 #### Computer Science Concepts:
 
@@ -51,7 +52,7 @@ In this lesson we build complexity through custom functions and loops.  The stud
 
 #### Materials Needed:
 
-> Raspberry Pi 3 with SenseHAT; Worksheet with `draw_line_silly.py` below
+> Raspberry Pi 3 with SenseHAT; [Worksheet](#) with [draw_line_silly.py]({{< ref "#draw_line_silly" >}}) below.
 
 #### Target Skills:
 
@@ -109,43 +110,35 @@ for i in range(8):
     time.sleep(0.5)
 ```
 
+### What are frames composed of? (15 minutes)
+
+In the last lesson we got to know that an animation is composed of individual frames. However, what are frames composed of?
+
+Take a look at the following pictures:
+
+![pixelation_wikipedia](https://upload.wikimedia.org/wikipedia/commons/e/e3/Dithering_example_undithered.png)
+
+Individual frames (static images) are composed of individual pixels, like this Iron Man picture: 
+
+![Iron Man](https://cdn.shopify.com/s/files/1/0843/3925/files/ironman_pixelart_grid_large.png?v=1475115142) 
+
+Each pixel has its own RGB values, just like what we did in drawing the frames in the last lesson with `sense.set_pixels()` with `pixel_list`s.
+
+Now, feel free to use the Raspberry Pi image viewer to open the images you downloaded (they should be in the `Downloads` folder). Feel free to zoom in as much as you can until you see individual pixels.
+
+How, then, do we control individual pixels?
+
 ### Getting Familiar with the Grid (20 minutes)
 
-Explan to the students that all those cool things are based on setting individual pixels.  Ask the them what function should be used to set individual pixels. (`sense.set_pixel(x, y, color)`)
+Explain to the students that all the cool things like drawing an animated rainbow are based on setting individual pixels.  Ask the them what function should be used to set individual pixels, if the function for drawing an entire frame is called `sense.set_pixels()`. (`sense.set_pixel(x, y, color)`)
 
-**Note:** `x`, `y` are x, y coordinates starting with 0. See the image below.  Also, set `color` here directly e.g. `sense.set_pixel(1, 2, [255,255,0])`.  It is __wrong__ to write `color = [255, 0, 0]`.
+{{% notice note %}}
+`x`, `y` are x, y coordinates starting with 0. See the image below.  Also, set `color` here directly e.g. `sense.set_pixel(1, 2, [255,255,0])`.  It is __wrong__ to write `color = [255, 0, 0]`.
+{{% /notice %}}
 
 ![RPi Pixel](https://s3.eu-west-2.amazonaws.com/learning-resources-production/projects/rpi-sensehat-led-coordinates/74c1964b50cd187a24d1ba6365c46006161f539b/en/images/coordinates.png)
 
 **Task**: Use this worksheet to design a picture that you would like to display on the LED matrix.  Then use `sense.set_pixel()` method to "draw" the picture on the LED matrix.
-
-It takes many lines of code to display your picture.  Don't you wish you could simply tell Python what color each LED in the matrix should display all at once and be done with it?  Yes, you can.  There is a slightly different method in Python that does exactly that.  It's called `sense.set_pixels(pixel_list)`, which accept a length 64 list of pixels and map them on to the LED matrix.
-
-**Task**: Now go back to your worksheet, for each cell in your grid, use one letter to indicate the color of that grid.  For example, you can use `r` for "red".  If that cell has no color, then it is black.  Feel free to write `b` or any other letter you want for that color.
-
-In Python, construct a list like this, using the letters you just wrote.  Remember to put a comma after each letter (because we are constructing a list), and for every 8 element, start a new line.  For example:
-
-```python
-pixel_list = [
-    O, O, O, O, O, O, O, O,
-    O, P, P, O, P, P, O, O,
-    P, P, P, P, P, P, P, O,
-    P, P, P, P, P, P, P, O,
-    O, P, P, P, P, P, O, O,
-    O, O, P, P, P, O, O, O,
-    O, O, O, P, O, O, O, O,
-    O, O, O, O, O, O, O, O,
-    ]
-```
-
-Then, after you finish this, tell Python which color each letter stands for *before* this list (why?).  For example:
-
-```python
-P = [255,105,180]
-O = [0,0,0]
-```
-
-Afterwards, use the following code to display that picture on to the LED matrix.
 
 ```python
 sense.set_pixels(pixel_list)
@@ -153,13 +146,13 @@ sense.set_pixels(pixel_list)
 
 If you want to, you can define another picture just like this, but change a few pixels, then you can create a SenseHAT animation!  You can set a time interval between each picture to control how fast the animation is.  Then, you can use a `while-loop` to display the animation forever.  See the code below:
 
-### Finding Patterns in Code (90 minutes)
+### Finding Patterns in Code (70 minutes)
 
 For some regular patterns of code, such as a diagonal line, there are even simpler ways to control the LED matrix.  This is what we are going to do next.
 
 #### Diagonal Line - Silly Code
 
-Now ask the students what they would normally write to do what `draw_line.py` does (Set the pixel 8 times.  See below).
+Now ask the students what they would normally write to do what `draw_line.py` does (Set the pixel 8 times.  See below)<a name = "draw_line_silly"></a>.
 
 ```python
 # draw_line_silly.py
@@ -281,12 +274,16 @@ for i in range(8):
     time.sleep(1)
 ```
 
-**Freeplay Time:**  Feel free to change the start, end, step, coordinates, colors and figure out what happens.
+**Free play Time:**  Feel free to change the start, end, step, coordinates, colors and figure out what happens.
 
 Some Guiding Questions:
 
 * How to set one line? One column?
 * Can each pixel have a different color?
+
+{{% notice tip %}}
+The key is to change where i is and the set `x`, `y` values.
+{{% /notice %}}
 
 ```python
 # line_rainbow.py
@@ -315,6 +312,8 @@ for i in range(8):
 
 * [Optional] How to make an X?
 
+{{% expand "Expand to see the code" %}}
+
 ```python
 from sense_hat import SenseHat
 import time
@@ -331,7 +330,7 @@ for j in range(8):
     time.sleep(1)
 ```
 
----
+{{% /expand %}}
 
 ### Move up in Complexity - Rainbow Pattern
 
@@ -396,6 +395,8 @@ Again, what changed, what is the same?  What changed?
 
 We can embed a loop in another loop like this:
 
+{{% expand "Expand to see the code" %}}
+
 ```python
 for j in range(8):
     for i in range(8):
@@ -403,6 +404,8 @@ for j in range(8):
         # time.sleep(0.1) # Can we add another interval here?
     time.sleep(0.5) # Think about Indentation Level
 ```
+
+{{% /expand %}}
 
 ---
 

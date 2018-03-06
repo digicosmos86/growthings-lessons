@@ -136,7 +136,7 @@ So the `X`s and `O`s are actually variable names!
 
 So here is actually what happened: we defined two colors: `red` and `white`. However, we named them to `X`s and `O`s.  Then we constructed a `list` called `question_mark`, with \\(8 \times 8=64\\) elements. Each of these elements maps to a pixel on the LED matrix.  If it is an `O`, the pixel will be `white`, and if it's an `X`, the corresponding pixel will be `red`! After all these, we pass this `question_mark` to `sense.set_pixels()` function, and voila! The question mark is shown on the LED matrix!
 
-{{% notice caution %}}
+{{% notice warning %}}
 Pay attention to the plural in `sense.set_pixels()`. In the next few lessons, we will encounter the `sense.set_pixel()` function, which looks very similar.
 {{% /notice %}}
 
