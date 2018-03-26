@@ -1,5 +1,5 @@
 +++
-title = "Building Abstractions with Functions"
+title = "Abstraction with Functions - Named Blocks"
 date =  2018-03-25T19:07:24-04:00
 weight = 7
 pre = "<b>Lesson 3. </b>"
@@ -161,7 +161,20 @@ First, because we are defining a name for this block of code, so we use the keyw
 
 Now we run the code, nothing happens. Why?
 
-That's because we have only defined this "named block." In order to use it, we need to call it. How do we make a call? With hands around mouth! (perform the action for the students) That looks like a pair of parentheses `()`, doesn't it!
+That's because we have only defined this "named block." In order to use it, we need to call it. So we write:
+
+```python
+def draw_5th_row():
+    for i in range(8):
+        sense.set_pixel(i, 4, r)
+        time.sleep(0.5)
+
+draw_5th_row
+```
+
+Nothing happens again! Why?
+
+Well, How do we make a call? With hands around mouth! (perform the action for the students) That looks like a pair of parentheses `()`, doesn't it!
 
 ```
 draw_5th_row()
