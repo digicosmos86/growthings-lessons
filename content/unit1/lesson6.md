@@ -243,6 +243,7 @@ Captain America
 'Captain America'
 >>> "my name is " + name
 'my name is Captain America'
+```
 
 Of course, we can output result to SenseHAT:
 
@@ -264,7 +265,6 @@ msg = "Hello Python!" + name
 # Output
 sense.show_message(msg, scroll_speed = speed, 
                    text_colour = red, back_colour = blue)
-
 ```
 
 **Challenge:**
