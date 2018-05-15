@@ -1,6 +1,6 @@
-baseURL = "https://microinventor.netlify.com/"
+baseURL = "https://growthings.netlify.com/"
 languageCode = "en-us"
-title = "MicroInventor"
+title = "GrowThings"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -15,9 +15,9 @@ home = [ "HTML", "RSS", "JSON"]
   # See the config.toml file from this documentation site to have an example.
   editURL = ""
   # Author of the site, will be used in meta information
-  author = "Paul Xu, Marcus Penny"
+  author = "Paul Xu"
   # Description of the site, will be used in meta information
-  description = ""
+  description = "Lessons for GrowThings Smart Greenhouse"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -34,26 +34,21 @@ home = [ "HTML", "RSS", "JSON"]
   # Order sections in menu by "weight" or "title". Default to "weight"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = ""
+  themeVariant = "green"
   pygmentsStyle = "monokai"
 
 [[menu.shortcuts]] 
-name = "<i class='fa fa-github'></i> Github repo"
+name = "<i class='fa fa-github'></i> Github Repository"
 identifier = "ds"
-url = "https://github.com/digicosmos86/MicroInventor_Hugo"
+url = "https://github.com/digicosmos86/growthings-lessons"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-star'></i> Node.Py"
-url = "http://nodepy.us/"
-weight = 11
-
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> SenseHAT Doc"
-url = "https://pythonhosted.org/sense-hat/api/"
+name = "<i class='fa fa-bookmark'></i> GrowThings Documentation"
+url = "https://growthings.readthedocs.io"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> MicroPython Doc"
+name = "<i class='fa fa-bullhorn'></i> MicroPython Documentation"
 url = "https://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html"
 weight = 30
