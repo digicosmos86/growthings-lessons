@@ -1,0 +1,31 @@
+div .sidebar {
+    font-size: 90%;
+    float: right;
+    width: 40%;
+    display: block;
+    margin: 0 0 24px 24px;
+    padding: 24px;
+    background: #f3f6f6;
+    border: solid 1px #e1e4e5;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div .sidebar ul {
+    padding:12px 0 6px 12px;
+    margin: 0 0 0 12px;
+}
+
+div .sidebar-title {
+    display: block;
+    font-weight: bold;
+    background: #e1e4e5;
+    padding: 6px 12px;
+    margin: -24px;
+    margin-bottom: 24px;
+    font-size: 120%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

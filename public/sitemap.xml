@@ -3,27 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/intro/</loc>
-    <lastmod>2018-02-26T13:20:31-05:00</lastmod>
+    <loc>https://growthings.netlify.com/unit2/lesson10/</loc>
+    <lastmod>2018-05-17T10:57:33-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/intro/intro/</loc>
-    <lastmod>2018-02-26T13:20:31-05:00</lastmod>
+    <loc>https://growthings.netlify.com/unit2/lesson9/</loc>
+    <lastmod>2018-05-17T10:57:29-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2018-02-26T13:20:31-05:00</lastmod>
+    <loc>https://growthings.netlify.com/unit2/lesson8/</loc>
+    <lastmod>2018-05-17T10:57:25-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://growthings.netlify.com/unit2/lesson7/</loc>
+    <lastmod>2018-05-17T10:57:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit2/lesson6/</loc>
+    <lastmod>2018-05-17T10:57:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit1/lesson5/</loc>
+    <lastmod>2018-05-17T10:57:07-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit1/lesson4/</loc>
+    <lastmod>2018-05-17T10:57:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit1/lesson3/</loc>
+    <lastmod>2018-05-17T10:57:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit1/lesson2/</loc>
+    <lastmod>2018-05-17T10:56:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit1/lesson1/</loc>
+    <lastmod>2018-02-26T14:20:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit1/</loc>
+    <lastmod>2018-02-26T14:16:09-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/unit2/</loc>
+    <lastmod>2018-05-17T10:57:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/</loc>
+    <lastmod>2018-05-17T10:57:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://growthings.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://growthings.netlify.com/tags/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,5 +1,5 @@
 +++
-title = "Course Overview and Intro to Python"
+title = "Overview of Greenhouses and Intro to Python"
 date =  2018-02-26T14:20:00-05:00
 weight = 5
 pre = "<b>Lesson 1. </b>"
@@ -7,14 +7,19 @@ pre = "<b>Lesson 1. </b>"
 ---
 ## Lesson Information
 
-This lesson is an overview of the structure of the course. The students will see what a table-top smart greenhouse looks like, and learn what they will need to get it to work. By the end of the lesson, the students will know what a micro-controller is and have some basic experience programming with Python.
+This lesson is an overview of the structure of the 2-week course. The students will see what a table-top smart greenhouse looks like and learn what they will need to get it to work. By the end of the lesson, the students will know what a micro-controller is and have some basic experience programming with (Micro)Python.
 
 {{% sidebar "Highlights" %}}
 
 ##### Computational Thinking Skills
 
-* **Automation:**
+* **Automation:**: What makes things "smart?"
 * **Analysis:** Debugging
+
+##### CSTA Computer Science Standards
+
+* **number**: description
+* **number**: description
 
 ##### Interdisciplinary Application
 
@@ -29,8 +34,9 @@ This lesson is an overview of the structure of the course. The students will see
 #### The purpose of the lesson is to:
 
 1. Overview the goal and logistics of the course
-2. Walk students through the hardware and software systems that they will use in the course
-3. Establish expectations for the course
+2. Introduce the concept of greenhouses
+3. Walk students through the hardware and software systems that they will use in the course
+4. Establish expectations for the course
 
 #### Driving Questions:
 
@@ -41,15 +47,16 @@ This lesson is an overview of the structure of the course. The students will see
 
 #### Science Concepts:
 
-> 
+* **Greenhouses**: a structure with walls and roof made mainly of transparent material, such as glass, in which plants requiring **regulated climatic conditions** are grown.
 
 #### Computer Science Concepts:
 
-> micro-controllers, computing, programming languages, operating systems
+* **Micro-controllers (MCU)**: are compact computers dedicated to one task
+* **Programming languages**: contains instructions for computers to do things
 
 #### Materials Needed
 
-> A fully functional smart greenhouse for demonstration, smart greenhouse kits for each pair of students
+> A fully functional smart greenhouse for demonstration, smart greenhouse kits for each pair of students, {{% button href="https://www.dropbox.com/s/up6t717amb4wfsu/Lesson%201.%20How%20does%20a%20greenhouse%20work.docx?dl=1" icon="fa fa-download" %}}Reading Material{{% /button %}}
 
 #### Target Skills
 
@@ -67,7 +74,7 @@ Set up a fully functional smart greenhouse before class.  As students come in, i
 
 As the students get settled, ask them to discuss in pairs these two questions:
 
-1. What does a greenhouse do?
+1. What does a **greenhouse** do?
 2. What can we do to make a greenhouse smart? What do we need?
 
 Have the students share their ideas.
@@ -82,9 +89,11 @@ By the end of the course, they could also choose to bring the smart greenhouse h
 
 ### Hardware and software environment (15 minutes)
 
-Introduce to the students that they are going to build the smart greenhouse by programming a micro-controller (MCU). Show them the Wio Link board that they will be programming. Explain that a MCU is like a computer. The biggest difference is that MCUs do not have an operating system (ask the students what they know about operating systems), so they can be made much smaller and cheaper. We can directly program the computer on the board to control other devices, such as sensors. After this, walk the students through the usb ports, configuration and reset buttons, battery ports, the LED indicators, and the 6 ports we will be programming with.
+Introduce to the students that they are going to build the smart greenhouse by programming a **micro-controller** (or MCU, micro-controller unit). Show them the Wio Link board that they will be programming. Explain that a MCU is like a computer. The biggest difference is that desktop computers or laptops are more powerful, so we use them to do many things, such as web surfing, gaming, coding, listening to music, etc. MCUs, on the other hand, are smaller and designed to do one task, so they can be made much smaller and cheaper. We can directly program MCU to control other devices, such as sensors. After this, walk the students through the usb ports, configuration and reset buttons, battery ports, the LED indicators, and the 6 ports we will be programming with.
 
 ![Wio Link image](http://growthings.readthedocs.io/en/latest/_images/ports.png)
+
+Introduce to the students that we are going to code in a **programing language** called Python (ask students what they know about programming languages). The reason why we use Python is that it's easy to learn, but at the same time very powerful. It's one of the most popular languages nowadays, and Python skills are very desirable in the job market.
 
 Now demonstrate to the students the EsPy program that they are going to be using. Walk them through how to connect the Wio Link board to the computer, find the port in EsPy, and get it ready to program in EsPy.
 
@@ -146,10 +155,14 @@ and it is important that they don't give up.
 
 ---
 
-## Review and Assessment
+## Review and Assessment (5 minutes)
 
-An exit slip (or Google classroom) with the following questions:
+Upload your code to Google Classroom
+
+### Exit slip
 
 1. What do greenhouses do?
-2. What makes a good coder?
-3. What is a module in Python and how to use them?
+2. What is a module in Python and how to use them?
+3. What makes a good coder?
+
+### Video diary

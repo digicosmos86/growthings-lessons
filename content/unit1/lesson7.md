@@ -1,8 +1,8 @@
 +++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date =  {{ .Date }}
-weight = 5
-pre = "<b>Lesson X. </b>"
+title = "Title"
+date =  2018-05-17T10:57:22-04:00
+weight = 11
+pre = "<b>Lesson 7. </b>"
 +++
 
 ---
