@@ -82,7 +82,7 @@ Ask the students why greenhouses are transparent. Explain to the students that a
 
 Well, it turns out that we can use artificial light sources. Connect the LED strip and turn it on without letting the students see the code. The LED strip turns on and only shows two colors - red and blue. Why is that? Actually, most of the plant grow lights are red and blue. [See this Google Image Search result](https://www.google.com/search?q=plant+grow+light&safe=off&biw=1310&bih=714&tbm=isch&source=lnms&sa=X&ved=0ahUKEwiljonkrZXbAhWSq1kKHRt3BlQQ_AUIigIoAQ).
 
-Why are are these commercial grow lights also red and blue? The [reading material]() explains it perfectly:
+Why are are these commercial grow lights also red and blue? The {{% button href="https://www.dropbox.com/s/7pi9lnz0b6m2peo/Lesson%202.%20Can%20plants%20see%20light.docx?dl=1" icon="fa fa-download"%}}Reading Meaterial{{% /button %}} explains it perfectly:
 
 Plants have adapted, over millions of years, to use sunlight as their source of energy to grow through the process of photosynthesis. In photosynthesis a plant produces sugar when a plant’s chlorophyll is exposed to light with a wavelength of in the visible part of the light spectrum of 400–700 nanometers. The amount of sugar is almost directly proportional to the intensity of the light. We can use this knowledge to expose plants to light of a specific frequency during each phase of its development.
 
@@ -90,7 +90,7 @@ Plants have adapted, over millions of years, to use sunlight as their source of 
 
 Why red and blue lights?
 
-It is important to note that all visible colors of the light spectrum are used by plants but blue and red are very important for plants.  The reason is that the chlorophyll cells in plants are very good at absorbing and using both blue and red light.  Blue light drives the photosynthesis process and promotes good root development.  If plant is receiving plenty of blue light it should have thick leaves, strong stems and will be shorter (but healthier). Red light also helps a plant grow but is particularly important for flower production. 
+It is important to note that all visible colors of the light spectrum are used by plants but blue and red are very important for plants.  The reason is that the chlorophyll cells in plants are very good at absorbing and using both blue and red light.  Blue light drives the photosynthesis process and promotes good root development.  If plant is receiving plenty of blue light it should have thick leaves, strong stems and will be shorter (but healthier). Red light also helps a plant grow but is particularly important for flower production.
 
 ### How to turn on the Grow Light? (10 minutes):
 
@@ -109,16 +109,25 @@ gl.on()
 
 ### Free coding and challenges (15 minutes)
 
+Refer to the [documentation on GrowLight](http://growthings.readthedocs.io/en/latest/displays.html#grow-light) and finish the following challenges:
+
 * Turn on the Grow Light
 * Make the Grow Light blink
 * Make the Grow Light blink in different colors, for different times, and for different intervals.
 * Make the Grow Light do a demonstration - change to different programs
 
+{{% notice tip %}}
+
+For challenge 3, you may use this website [RGB Color Picker](https://www.rapidtables.com/web/color/RGB_Color.html) useful in choosing your colors.
+For challenge 4, the use of quotation marks `""` is very important!
+
+{{% /notice %}}
+
 ---
 
 ## Review and Assessment (5 minutes)
 
-Upload your final code to Google Classroom
+Please upload your final code to Google Classroom. Save your file in the format of `wa1-0529.py`.
 
 ### Exit slip
 
@@ -126,3 +135,6 @@ Upload your final code to Google Classroom
 2. How to control the Grow Light to do different things?
 
 ### Video diary
+- What did you learn about science today? Did you have any problems understanding it? Why or why not?
+- What did you learn about coding today? Did you have any problems understanding it? Why or why not?
+- What do you want to learn tomorrow?

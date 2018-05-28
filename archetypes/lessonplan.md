@@ -108,4 +108,16 @@ Please check [this page](https://help.ghost.org/article/4-markdown-guide) for mo
 
 ---
 
-## Review and Assessment
+## Review and Assessment (5 minutes)
+
+Please upload your final code to Google Classroom. Save your file in the format of `wa1-0529.py`.
+
+### Exit slip
+
+1. Question 1
+2. Question 2
+
+### Video diary
+- What did you learn about science today? Did you have any problems understanding it? Why or why not?
+- What did you learn about coding today? Did you have any problems understanding it? Why or why not?
+- What do you want to learn tomorrow?
