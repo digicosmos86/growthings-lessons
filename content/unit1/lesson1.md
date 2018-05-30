@@ -38,12 +38,10 @@ This lesson is an overview of the structure of the 2-week course. The students w
 3. Walk students through the hardware and software systems that they will use in the course
 4. Establish expectations for the course
 
-#### Driving Questions:
+#### Driving Science Questions:
 
-- What is a smart device?
-- What do greenhouses do?
-- What is a micro-controller?
-- What is Python and why are we learning it?
+* What do greenhouses do?
+* What are some of the variables that we can control/manipulate in a greenhouse?
 
 #### Science Concepts:
 

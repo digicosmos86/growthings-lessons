@@ -23,10 +23,6 @@ This lesson focuses on one factor that affects plant growth: **light**. We know 
 * **number**: description
 * **number**: description
 
-##### Cross-discipline Applications
-
-* N/A
-
 ##### Duration
 
 50 Minutes
@@ -39,7 +35,7 @@ This lesson focuses on one factor that affects plant growth: **light**. We know 
 2. Use the GrowLight class to control the LED strip
 3. Explore the use of functions
 
-#### Driving Questions:
+#### Driving Science Questions:
 
 * Why are most plants green?
 * Why are most grow lights red and blue?

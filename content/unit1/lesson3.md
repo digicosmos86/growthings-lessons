@@ -1,249 +1,182 @@
 ﻿+++
-title = "Lights, Buttons, and Lux"
+title = "Light Intensity and Plant Growth"
 date =  2018-05-17T10:57:00-04:00
 weight = 7
-pre = "<b>Lesson 3: </b>"
+pre = "<b>Lesson 3. </b>"
 +++
 
 ---
 
 ## Lesson Information
 
-A challenge with greenhouses in the Boston area is that in the fall and spring the daylight hours can be rather short.  Most plants need at least 8 hours of light to grow well.  In fact, some plants need at least 12 hours of light to grow well.  In this activity you will learn:
+In the the Boston area we get nearly 15.5 hours of sunlight in the middle of Summer, however, in March and April Boston receives around 11 and in the middle of winter we get about 9 hours of sunlight.  Most plants require 12 hours of sunlight per day to grow well and if you are a greenhouse owner and you want to grow plants year round artificial light will be needed to grow plants.  Or if you want to grow light plant indoors artificial lights will be needed.  However, lights cost money to run so it would be good to know if your plants are getting enough light from natural sources and only use additional artificial light when needed.
 
-- how to measure the amount of light shining on your greenhouse using a light sensor
-- how to use a button to turn on and off your LED strip if you need to manually increase the amount of light to your house.
-  
+In this lesson you will learn how to measure light intensity, measured in lux and how to use that information to turn on and off a GrowLight.
+
 {{% sidebar "Highlights" %}}
 
 ##### Computational Thinking Skills and Concepts
 
-- Data Collection
-- Algorithms and Procedures
+* **Automation**
+* **Controls and Loops (If-Then-What)** (Optional, for more advanced students)
 
 ##### CSTA Computer Science Practices
 
-- **Practice 1**: Recognizing and Defining Computational Problems
-- **number**: Creating Computational Artifacts
+* **Practice 1**: Recognizing and Defining Computational Problems
+* **Practice 2**: Creating Computational Artifacts
 
 ##### Cross-discipline Applications
 
-
+Light is a form of electromagnetic energy and plants, particularly most vegetables, need both blue and red light to produce their own food.  The blue and red light activate the chlorophyll cells that enable photosynthesis to occur.
 
 ##### Duration
 
-30-45 minutes for the temperature and humidity sensor and 30-45 minutes for the connecting and programming of the relay.
+30 to 45 minutes
 
 {{% /sidebar %}}
 
 #### The purpose of the lesson is to:
 
-1. Learn how to measure light intensity
-2. Learn how to manually control your LED strip
+1. Learn how to use light sensor to measure light intensity
+2. Learn how to graph data and use that to make predictions
 
-#### Driving Questions:
+#### Driving Science Questions:
 
-- How can I determine the amount that my greenhouse is receiving?
-- How can I control my LED strip?
+* How does the amount of light affect plant growth?
+* Is my grow light going to be efficient enough for my plants?
 
 #### Science Concepts:
 
-- **Lux**:  is the basic unit for light intensity.  It is one lumen per square meter. 
-- **Lumen**:  a measure of the total amount of visible light emitted by a source. For example, a light bulb is rated at 400 lumens or 800 lumens.  The more lumens the brighter the bulb.
-
+* **Light Energy**: is the only form of **energy** that we can actually see directly.  Plants use light across the visible spectrum but especially the high energy blue and lower energy red photons.
 
 #### Computer Science Concepts:
 
-- **Automation**: Use code to enable hardware to collect data and to impact its surroundings by itself 
-- **While Loop**: A coding structure that tests a condition and if that condition is true an action is taken  if it is not true something else is done. This loop can repeat forever until the program is interrupted
+* **Automation**: Use code to enable hardware to collect data and to impact its surroundings by itself
+* **Abstraction**: Collect data using electronic devices
 
 #### Materials Needed:
 
-![light lesson picture](https://lh3.googleusercontent.com/cdBml57bVKexJpEdtVdXnyzzNI1g5PGAAZGX7azDxD-7Y5pvDa5nQcghcqfy7qNH37rf1dKeXIb-)
-Digital Light Sensor, Wio_link Board, 3 cable connectors, USB cable, LED light strip, Button
+> Wio Link board, digital light sensor, two connector cables, 1 LED GrowLight, rulers, {{% button href="https://www.dropbox.com/s/ignj6wj93er5e6m/Lesson%203.%20Light%20intensity%20and%20duration%20impact%20on%20plant%20growth.docx?dl=1" icon="fa fa-download"%}}Reading Meaterial{{% /button %}}
 
 #### Target Skills:
 
-1. SWBAT connect light sensors and measure light levels
-2. SWBAT build a basic button control
-3. SWBAT learn how to create a simple while Loop
+1. SWBAT program and code a Light Sensor
+2. SWBAT use data from the Light Sensor to control a GrowLight
 
 ---
 
 ## Instructional Plan and Structure
 
-There are three components to this lesson.
+### Do Now (Review Questions)
 
-- Part 1:  Use a button to control your LED Strip
-- Part 2:  Connect a Light Sensor to record Lux
-- Part 3:  Set up a program to continuously record Light readings and to do so at regular times
+In your composition notebook, write down answers to these two questions:
+
+1. What aspect of plant growth is red light specifically helpful for? How about blue light?
+2. Write down code to blink the LED strip 5 times, in .1 second intervals, and in color blue. The LED strip is at Port 2.
 
 ### Overview of the lesson
 
-The purpose of this lesson is to learn how to create a simple control for your LED light strip using a button. One of the core problems with greenhouses often involves the amount light that a plant receives.  Plants absorb mostly blue and red light as they are different frequencies of energy that the different chlorophyll cells in a plant use to make its food.  In systems that use artificial light the problem is also distance from the light source.  The further a plant is from a light source the less energy that plant receives.  In fact, the intensity of light decreases rapidly the further the plant is away from the light.  Light intensity behaves follows an inverse square law rule which means that if the light if one has a light that is 1 meter away from a plant and another light that is 2 meters from a plant.  The plant that is one meter from the plant receives 4 times as much energy.
+In the last lesson we learned how to turn on/off our LED grow lights. The LEDs are in red and blue, the desired colors for the plants. However, have you wondered whether these lights will be bright enough sufficient for your plants? Can it replace sunlight for our plants? Today we are going to learn how to measure the **light intensity** of our grow lights. This is going to help us make decisions about where we put our LED lights in the smart greenhouse.
 
-### Do Now (5-10 minutes)
+### Activity 1:  `get` a Light Sensor Reading
 
-In the previous lesson you learned how to hook up a LED strip and write code to turn on and off  and control that light strip.  Can you write the lines of code that you used to connect your LED strip to port 3 of your board and to have the light turn on and then go off after 6 seconds?
-
-### Activity 1: Controlling the LED grow light with a button
-
-What is the first thing we need to do when starting a new program?  We need to import sensors or objects to our board.  As we have learned the LED strip is a display and a button is an object called an actuator.  An actuator is an object that causes something else to move to change. 
-
-So we need to import our GrowLight and our Button
+Start by introducing the do now:
 
 ``` python
-from displays import GrowLight 
-from actuators import Button
+from sensors import LightSensor
+ls = LightSensor(port=6)
+ls.get_lux()
 ```
 
-Now do you remember what is the next step?  We need to define the variables and the port that the GrowLight and the Button are attached to the board.  Lets put the GrowLight on port 1 and the Button on port 2.  So our next lines of code are:
+To get a light sensor reading is relatively straightforward. One just needs to import the LightSensor, assign a variable, say ls, and use the `.get_lux()` function to get the lux level.  The code for this is just three lines and is:
 
-``` python
-gl = GrowLight(1)
-b = Button(2)
-```
+{{% notice tip %}}
 
-What if we wanted the GrowLight to come on if we are pressing the button? 
+Note that the light sensor has to go on port 6, because it is an I2C device. Also, when you are working with sensors, (that is, whatever you import from the `sensors` module), you always use `get_xxx()` to get a reading, whether it is moisture, light intensity(lux), or temperature/humidity, which we are going to use in the future.
 
-We need to tell the board what will happen IF the Button is pressed and what will happen if the button is not pressed.  This is a if, else statement.  an If-else statement means that if a condition is true then do something, if it is not true then do something else.  So our code will look like
+{{% /notice %}}
 
-``` python
-if b.is_pressed():
-    gl.on()
-else:
-    gl.off()
-```
+Create a new file and write down the above lines. Run the script, and you should be able to see a light sensor reading in the terminal.
 
-NOTE: the : at the end of the if and else lines and the indention in the the if-else loop.  The colons tell python that the next line of code is part of the same statement and to run that code if the condition is true.  You will likely get an error if you forget one of the colons.
+Move your light sensor around and run the program a few times to make sure that your light sensor is working.  Now like we will want to be able to use the light sensor information to do something.
 
-Now your complete program should look like this:
+Alter the ambient light condition and repeat the readings. What are the light readings with the lights on/off? With the curtains drawn/not drawn? Are there differences between light sensors close/away from the windows? Facing the windows?
 
-``` python
-from displays import GrowLight
-from actuators import Button
+### Activity 2: make a graph using the light sensor readings
 
-gl = GrowLight(1)
-b = Button(2)
+Now that we can measure light intensity, how about our own grow lights? If you are going to install the grow lights inside the greenhouse, what are some decisions you might have to make? Discuss with your partner.
 
-if b.is_pressed():
-    gl.on()
-else:
-    gl.off()
-```
+Here are a couple of questions that might be helpful. Where do I put the grow light?  How close should they be to the plants? Are my grow lights strong enough to replace sunlight?
 
-If you haven't connected your board to your computer do so and run the program.  Be sure to hold down the button as you hit the run button in your programming environment and see what happens?
-What happens when you start the program and you are not holding down the button?
+There are two types of lights on the grow light - red and blue ones. Are they as bright as each other? Why or why not?
 
-### Activity 2:  Improving your Button
+Now let's use our light sensor to answer these questions. Turn on your Grow Light (see the script below). Place your light sensor at different distances from the red and blue lights, for example, 0 inches, 0.5 inches, 1 inch, etc. Record the lux readings on {{% button href="https://www.dropbox.com/s/y1kmjj8qau94csr/Lesson%203.%20Light%20Sensor%20Worksheet.docx?dl=1" icon="fa fa-download" %}}this worksheet{{% /button %}}.
 
-So you have learned how to turn on and off the GrowLight depending on whether the button is pressed or not.  This is not very useful as you can't control your GrowLight with the button as the program ends and just stops and you left with either an on GrowLight or an off Growlight.
+When you have finished recording your data, graph the data in the blank spaces on the worksheet. Use different color lines for blue and red lights.
 
-We need to be able to turn on and off the GrowLight.  You need to use a new function called a While loop.  While loops are conditional loop that tells python that if a condition is True then do something and if it is False then do something else. 
+Answer the following questions:
 
-In our code we will need to add in a while loop right above the if statement:
+* Are blue and red lights different in light intensity?
+* What did you notice from the graph?
+* What might be some of the reasons why your graph looks this way?
+* What is the relationship between distance and light intensity?
+
+### Activity 3: For advanced students or classes with extra time
+
+#### Control individual lights
+
+The first step of controlling individual lights on the LED strip is the same:
 
 ``` python
 from displays import GrowLight
-from actuators import Button
-
-gl = GrowLight(1)
-b = Button(2)
-
-while True: 
-    if b.is_pressed():
-        gl.on()
-    else:
-        gl.off()
+gl = GrowLight(port=1)
 ```
 
-Your program should now run forever and what do you think will happen when you press the button? What happens when you release the button?
-
-### Challenges
-
-For help with the button and Growlight go here:
-http://growthings.readthedocs.io/en/latest/displays.html#grow-light 
-
-Challenge #1:  Have the GrowLight blink white when the button is pushed
-
-{{% expand "Expand to see answer" %}}
+Now you can assign individual colors to the GrowLight with this syntax:
 
 ``` python
-from displays import GrowLight
-from actuators import Button
-gl = GrowLight(1)
-b = Button(2)
-while True:
-    if b.is_pressed():
-        gl.blink()
-    else:
-        gl.off()
+gl[0] = [255, 0, 0]
+gl.write()
 ```
 
-{{% /expand %}}
-
-Challenge #2:  Blink the LED light all RED and really fast
-
-{{% expand "Expand to see answer" %}}
+This sets the first light to red. In the square bracket on the left of the equal sign, the number is the index of each individual light on the strip. This index starts with `0`, so the first light is 0, and the second is `1`, and so on. On the right of the equal sign is the color in `[R, G, B]`. The square bracket makes sure that the three individual numbers are read as a whole by Python, not three individual numbers.  They collectively have a meaning. The gl.write() actually sets the colors. This means, you can set more colors before calling gl.write:
 
 ``` python
-from displays import GrowLight
-from actuators import Button
-gl = GrowLight(1)
-b = Button(2)
-while True:
-    if b.is_pressed():
-       gl.blink([255,0,0], 60,.1)
-    else:
-       gl.off()
+gl[0] = [255, 0, 0]
+gl[1] = [0, 255, 0]
+gl[2] = [0, 0, 255]
+gl.write()
 ```
 
-{{% /expand %}}
+We can think of the LED matrix as a list holding each individual colors like this:
 
-Challenge #3:  Have your GrowLight come on only after the Button has been pressed for 3 seconds
+![List](list.jpg)
 
-{{% expand "Expand to see answer" %}}
+We can put each individual colors in these cells, and then call `gl.write()` to actually set all these colors to the LED strip.
+
+#### Setting multiple LEDs at once
+
+We will need a **for loop** to do this. **For loop** is a more sophisticated structure that we might come back to in the future, so don't worry about it if you don't know what the following means:
 
 ``` python
-from displays import GrowLight
-from actuators import Button
-import time
-gl = GrowLight(1)
-b = Button(2)
-delay = 3
-while True:
-    if b.is_pressed():
-       time.sleep(delay)
-       gl.on()
-    else:
-       gl.off()
+for i in [0, 1, 2, 3, 4]:
+    gl[i] = [255, 0, 0]
+gl.write()
 ```
 
-{{% /expand %}}
+Run the code and see what happens.
 
-Challenge #4:  Have the LED light blink red, white, then blue when the button is pressed but be solid blue when the button is not pressed
-
-{{% expand "Expand to see answer" %}}
+Now try to change the numbers in `[0, 1, 2, 3, 4]` and see what happens. How about this line?
 
 ``` python
-from displays import GrowLight
-from actuators import Button
-import time
-gl = GrowLight(1)
-b = Button(2)
-while True:
-
-    if b.is_pressed():
-        gl.blink([255,0,0], 1, 1)
-        gl.blink([0,255,0], 1, 1)
-        gl.blink([0,0,255], 1, 1)
-    else:
-        gl.on()
+for i in [0, 2, 4, 6, 8]:
+    gl[i] = [255, 0, 0]
+for i in [1, 3, 5, 7, 9]:
+    gl[i] = [0, 0, 255]
+gl.write()
 ```
 
-{{% /expand %}}
-
----
+Again, feel free to modify the code and see what happens.
 
 ## Review and Assessment (5 minutes)
 
@@ -251,17 +184,10 @@ Please upload your final code to Google Classroom. Save your file in the format 
 
 ### Exit slip
 
-1. How does light intensity affect plant growth?
-2. How to use the light sensor to measure light intensity? What is the unit of the light intensity?
+1. What is the relationship between distance and light intensity?
+2. How to use the light sensor to measure light intensity (Write down the code)? What is the unit of the light intensity that we use here?
 
 ### Video diary
 - What did you learn about science today? Did you have any problems understanding it? Why or why not?
 - What did you learn about coding today? Did you have any problems understanding it? Why or why not?
 - What do you want to learn tomorrow?
-
-### If you are interested...
-
-Play around with the Button and GrowLight and see what else you can control with the Button.  For example, can you make a program that will allow you to push the button and have the light go on and then push the button and have the light go off? 
-
-Learn more about actuators and buttons here:
-http://growthings.readthedocs.io/en/latest/actuators.html
