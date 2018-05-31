@@ -54,7 +54,7 @@ This lesson focuses on one factor that affects plant growth: **light**. We know 
 
 #### Materials Needed:
 
-> Wio Link board, LED strip, {{% button href="https://www.dropbox.com/s/7pi9lnz0b6m2peo/Lesson%202.%20Can%20plants%20see%20light.docx?dl=1" icon="fa fa-download"%}}Reading Meaterial{{% /button %}}
+> Wio Link board, LED strip, {{% button href="https://www.dropbox.com/s/7pi9lnz0b6m2peo/Lesson%202.%20Can%20plants%20see%20light.docx?dl=1" icon="fa fa-download"%}}Reading Material{{% /button %}}
 
 #### Target Skills:
 

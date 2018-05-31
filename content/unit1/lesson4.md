@@ -52,7 +52,7 @@ In this lesson the students are going to learn why temperature and humidity are 
 
 #### Materials Needed:
 
-> Wio Link board, Temperature/humidity sensor pro, OLED screen, {{% button href="https://www.dropbox.com/s/buh5mibeuj5a4pt/Lesson%204.%20Temperature%2C%20humidity%2C%20and%20plant%20growth.docx?dl=1" icon="fa fa-download"%}}Reading Meaterial{{% /button %}}
+> Wio Link board, Temperature/humidity sensor pro, OLED screen, {{% button href="https://www.dropbox.com/s/buh5mibeuj5a4pt/Lesson%204.%20Temperature%2C%20humidity%2C%20and%20plant%20growth.docx?dl=1" icon="fa fa-download"%}}Reading Material{{% /button %}}
 
 #### Target Skills:
 

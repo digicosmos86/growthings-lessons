@@ -23,11 +23,6 @@ A paragraph that explains the purpose and contents of the lesson
 * **number**: description
 * **number**: description
 
-##### Cross-discipline Applications
-
-* A brief description of how this lesson could be helpful for other
-disciplines
-
 ##### Duration
 
 X hour
@@ -41,12 +36,10 @@ X hour
 3. Purpose 3
 4. Purpose 4
 
-#### Driving Questions:
+#### Driving Science Questions:
 
 * Question 1
 * Question 2
-* Question 3
-* Question 4
 
 #### Science Concepts:
 
@@ -62,7 +55,7 @@ X hour
 
 #### Materials Needed:
 
-> An indented paragraph with all the materials needed, separated by commas
+> An indented paragraph with all the materials needed, separated by commas, {{% button href="link" icon="fa fa-download"%}}Reading Material{{% /button %}}
 
 #### Target Skills:
 
@@ -98,7 +91,7 @@ ls.get_lux()
 
 Please check [this page](https://help.ghost.org/article/4-markdown-guide) for more references. Feel free to use [SlackEdit](https://slackedit.io) to edit your markdown documents.
 
-### Overview of the lesson (xx minutes)
+### Do Now (Review of Concepts)
 
 ### Activity 1 (xx minutes)
 

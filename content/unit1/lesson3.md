@@ -56,7 +56,7 @@ Light is a form of electromagnetic energy and plants, particularly most vegetabl
 
 #### Materials Needed:
 
-> Wio Link board, digital light sensor, two connector cables, 1 LED GrowLight, rulers, {{% button href="https://www.dropbox.com/s/ignj6wj93er5e6m/Lesson%203.%20Light%20intensity%20and%20duration%20impact%20on%20plant%20growth.docx?dl=1" icon="fa fa-download"%}}Reading Meaterial{{% /button %}}
+> Wio Link board, digital light sensor, two connector cables, 1 LED GrowLight, rulers, {{% button href="https://www.dropbox.com/s/7iga8k361xscfia/Lesson%203.%20Light%20intensity%20and%20duration%20impact%20on%20plant%20growth%20DVSM.docx?dl=1" icon="fa fa-download"%}}Reading Material{{% /button %}}
 
 #### Target Skills:
 
