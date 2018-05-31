@@ -188,6 +188,7 @@ Please upload your final code to Google Classroom. Save your file in the format 
 2. How to use the light sensor to measure light intensity (Write down the code)? What is the unit of the light intensity that we use here?
 
 ### Video diary
-- What did you learn about science today? Did you have any problems understanding it? Why or why not?
-- What did you learn about coding today? Did you have any problems understanding it? Why or why not?
-- What do you want to learn tomorrow?
+
+* What did you learn about science today? Did you have any problems understanding it? Why or why not?
+* What did you learn about coding today? Did you have any problems understanding it? Why or why not?
+* What do you want to learn tomorrow?
