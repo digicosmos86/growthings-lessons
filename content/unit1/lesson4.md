@@ -52,7 +52,7 @@ In this lesson the students are going to learn why temperature and humidity are 
 
 #### Materials Needed:
 
-> Wio Link board, Temperature/humidity sensor pro, OLED screen, {{% button href="https://www.dropbox.com/s/buh5mibeuj5a4pt/Lesson%204.%20Temperature%2C%20humidity%2C%20and%20plant%20growth.docx?dl=1" icon="fa fa-download"%}}Reading Material{{% /button %}}
+> Wio Link board, Temperature/humidity sensor pro, OLED screen, {{% button href="https://www.dropbox.com/s/r12s3ndyshmrmfr/Lesson%204.%20Temperature%2C%20humidity%2C%20and%20plant%20growth.pdf?dl=1" icon="fa fa-download"%}}Reading Material{{% /button %}}
 
 #### Target Skills:
 
@@ -112,8 +112,8 @@ tsp = TemperatureSensorPro(port=3)
 os = OledScreen(port=6)
 
 tsp.get_temperature() # can be deleted
-tsp.get_humidity()    # can be delteed
-os.show_sensor_data(tsp, 1)
+tsp.get_humidity()    # can be deleted
+os.show_sensor_data(sensor = tsp, line = 1)
 ```
 
 The last line of the code instructs the OLED screen to show the data in the temperature sensor to the OLED screen at line 1. The OLED screen can display 8 lines. Change the number and see what happens.
@@ -134,7 +134,7 @@ os = OledScreen(port=6)
 
 # notice the lines deleted here
 while True:
-    os.show_sensor_data(tsp, 1)
+    os.show_sensor_data(sensor = tsp, line = 1)
     time.sleep(5)
 ```
 
@@ -167,8 +167,8 @@ os = OledScreen(port=6)
 
 # notice the lines deleted here
 while True:
-    os.show_sensor_data(tsp, 1)
-    os.show_sensor_data(ls, 2)
+    os.show_sensor_data(sensor = tsp, line = 1)
+    os.show_sensor_data(sensor = ls, line = 2)
     time.sleep(10)
 ```
 
@@ -176,7 +176,7 @@ while True:
 
 Now we know how to display sensor information on the OLED screen. That's pretty cool, but we can't really change what we see on the screen. Is there a way that we can customize the information on the OLED screen?
 
-Absolutely! We can use the `os.show_line()` function to write certain texts to the screen. For example: `os.show_line(1, "Hello Python!")`
+Absolutely! We can use the `os.show_line()` function to write certain texts to the screen. For example: `os.show_line(line = 1, "Hello Python!")`
 
 Remember the quotation marks around `"Hello Python"`? This is called a **string** in Python. Strings are important because it tells Python that this text is different from the rest of the program, so interpret it literally. For example: if we write `from sensor import TemperatureSensorPro`, the words `from` and `import` are blue and bolded, because they mean something to Python. Now if we put the same text within quotation marks, it will be grey. They lose the special meaning. So strings differentiate between program code and text.
 

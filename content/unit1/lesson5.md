@@ -52,7 +52,7 @@ This lesson is a treasure hunt game. Students program sensors and send sensor da
 
 #### Materials Needed:
 
-> WioLink board, router that's already connected to the Internet, temperature sensor, light sensor, live dashboard ([link](http://ts.bc.edu:1880/ui)), rechargeable batteries, {{% button href="#" icon="fa fa-download"%}}Reading Material (not ready yet){{% /button %}}
+> WioLink board, router that's already connected to the Internet, temperature sensor, light sensor, live dashboard ([link](http://ts.bc.edu:1880/ui)), rechargeable batteries, {{% button href="https://www.dropbox.com/s/s105hgh5gwzpdlt/Lesson%205.%20Plants_inquiry.docx?dl=1" icon="fa fa-download"%}}Reading Material{{% /button %}}
 
 #### Target Skills:
 
