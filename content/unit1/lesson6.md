@@ -50,7 +50,7 @@ A smart greenhouse wouldn't be smart if it could not do things on its own. The k
 
 #### Materials Needed:
 
-> MCU board, button, temperature sensor, Relay, Servo, (Optional: light sensor, LED strip), {{% button href="https://www.dropbox.com/s/vhmpttvdytodkh4/Lesson%206.%20Greenhouse%20Automation.docx?dl=1" icon="fa fa-download"%}}Reading Material{{% /button %}}
+> MCU board, button, temperature sensor, Relay, Servo, (Optional: light sensor, LED strip), {{% button href="https://www.dropbox.com/s/vhmpttvdytodkh4/Lesson%206.%20Greenhouse%20Automation.docx?dl=1" icon="fa fa-download" %}}Reading Material{{% /button %}}
 
 #### Target Skills:
 
@@ -75,7 +75,7 @@ gl.on()
 
 In your composition notebook, write down what you would do if you were to **turn on** a device called Relay at **Port 1**. Just like `GrowLight` is one of the `displays`, the `Relay` is one of the `actuators`.
 
-{{% expand "Expand to see answer: %}}
+{{% expand "Expand to see answer:" %}}
 ``` python
 from actuators import Relay
 r = Relay(port = 1)
