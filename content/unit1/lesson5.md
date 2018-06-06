@@ -1,5 +1,5 @@
 +++
-title = "Treasure hunt with sensors"
+title = "Treasure Hunt with Sensors and Live Dashboard"
 date =  2018-05-31T16:29:07-04:00
 weight = 9
 pre = "<b>Lesson 5. </b>"

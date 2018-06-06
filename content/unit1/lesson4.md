@@ -1,5 +1,5 @@
 +++
-title = "Temperature, humidity, and plant growth"
+title = "Temperature, Humidity, & Plant Growth"
 date =  2018-05-31T08:02:39-04:00
 weight = 8
 pre = "<b>Lesson 4. </b>"
